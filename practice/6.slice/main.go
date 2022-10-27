@@ -25,4 +25,13 @@ func main() {
 
 	good := []string{"g", "o", "o", "d"}
 	fmt.Println(good) // [g o o d]
+
+	myarr := [...]int{1, 2, 3}
+    fmt.Printf("%d 的类型是: %T", myarr[0:2], myarr[0:2])
+
+	a := make([]int, 2)
+    b := make([]int, 2, 10)
+    fmt.Println(a, b)
+    fmt.Println(len(a), len(b))
+    fmt.Println(cap(a), cap(b)) //长度（size），容量（cap）
 }
